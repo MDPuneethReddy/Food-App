@@ -2,23 +2,55 @@
     "payload":[
         {
             "id":1,
-            "name":"one",
-            "picture":""
+            "name":"lazzez",
+            "picture":"https://www.visitcornwall.com/sites/default/files/product_image/the_cove_resturant_.jpg",
+            "Tags":["American","FreshFood","classic"],
+            "rating":4.1,
+            "Address":{
+                "flatnumber/colony":"A block mittoor",
+                "city":"chittoor",
+                "state":"AndhraPradesh",
+                "Country":"India"
+            }
         },
         {
             "id":2,
-            "name":"two",
-            "picture":""
+            "name":"alankar",
+            "picture":"https://media.timeout.com/images/103067150/image.jpg",
+            "Tags":["indian","FreshFood","PureVeg"],
+            "rating":4.5,
+            "Address":{
+                "flatnumber/colony":"A block balaji colony",
+                "city":"tirupathi",
+                "state":"AndhraPradesh",
+                "Country":"India"
+            }
         },
         {
             "id":3,
-            "name":"three",
-            "picture":""
+            "name":"prabha grandin",
+            "picture":"https://wallpapercave.com/wp/wp1874196.jpg",
+            "Tags":["chinese","FreshFood"],
+            "rating":4.2,
+            "Address":{
+                "flatnumber/colony":"B block mittoor",
+                "city":"chittoor",
+                "state":"AndhraPradesh",
+                "Country":"India"
+            }
         },
         {
             "id":4,
-            "name":"four",
-            "picture":""
+            "name":"mock",
+            "picture":"https://cdn.cnn.com/cnnnext/dam/assets/190625170055-mirazur-dining-room-night-nicolas-lobbestael-super-tease.jpg",
+            "Tags":["indian","nonVeg","FreshFood"],
+            "rating":3.5,
+            "Address":{
+                "flatnumber/colony":"B block tirumala",
+                "city":"tirupathi",
+                "state":"AndhraPradesh",
+                "Country":"India"
+            }
         }
     ]
 }

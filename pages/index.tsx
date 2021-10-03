@@ -5,13 +5,13 @@ import Image from 'next/image'
 
 // import styles from '../styles/Home.module.css'
 
-import ViewCards from '../components/viewCards'
+import ViewCards from '../components/ViewCards'
 
 const Home: NextPage = () => {
   return (
     <div>
       This is a food App
-      <ViewCards />
+      <div style={{height:"100%", width:"50%",textAlign:"center"}}><ViewCards /></div>
     </div>
   )
 }
