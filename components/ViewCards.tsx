@@ -1,42 +1,33 @@
 import { Col, Row } from "antd"
-import React from "react"
+import axios from "axios";
+import React, { useEffect, useState } from "react"
 import RestaurentCard from "./RestaurentCard";
-export default function ViewCards(){
-    const data:Array<any>=[
-        {
-            "id":1,
-            "name":"one",
-            "picture":""
-        },
-        {
-            "id":2,
-            "name":"two",
-            "picture":""
-        },
-        {
-            "id":3,
-            "name":"three",
-            "picture":""
-        },
-        {
-            "id":4,
-            "name":"four",
-            "picture":""
-        }
-    ]
+const ViewCards=()=>{
+    const [data,setData]=useState<Array<any>>([])
     const style = { background: '#0092ff', padding: '8px 0' };
-    
+useEffect(() => {
+   axios.get("http://localhost:4000/payload").then(response=>{
+       console.log(response)
+       setData(response.data)
+   }).catch(error=>{
+       console.log(error)
+   })
+}, [])    
 return(
-    <div>
+    <div >
+        <Row style={{height:"10%"}}  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         {data.map((item:any)=>{
+
             return(
-            <Row  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+            
             <Col className="gutter-row" span={6}>
-            <div ><RestaurentCard /></div>
+            <div><RestaurentCard restaurent={item}/></div>
             </Col>
-          </Row>
+         
             )
         })}
+         </Row>
     </div>
 )
 }
+export default ViewCards
